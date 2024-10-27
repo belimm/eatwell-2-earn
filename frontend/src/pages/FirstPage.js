@@ -33,11 +33,15 @@ const FirstPage = () => {
       formData.append('image', file); // Add the selected file to the form data
 
       try {
-         const res = await axios.post(process.env.REACT_APP_BE_URL, formData, {
-            headers: {
-               'Content-Type': 'multipart/form-data', // Set the content type
-            },
-         });
+         const res = await axios.post(
+            `${process.env.REACT_APP_BE_URL}/api/v1/analyze/image`,
+            formData,
+            {
+               headers: {
+                  'Content-Type': 'multipart/form-data', // Set the content type
+               },
+            }
+         );
 
          console.log('Server Response:', res);
 

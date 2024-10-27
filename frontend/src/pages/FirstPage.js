@@ -64,7 +64,7 @@ const FirstPage = () => {
    const RenderHeaderText = () => {
       return (
          <h1 className="text-2xl font-bold mb-20 font-mono text-transparent bg-clip-text bg-gradient-to-r from-light-purple to-dark-blue hover:to-pink-500 hover:from-purple-500 hover:to-pink- transition-all duration-400">
-            Eat 2 Well Earn
+            Eat Well 2 Earn
          </h1>
       );
    };

@@ -6,6 +6,7 @@ import Input from '../components/Input';
 import ConnectWalletButton from '../components/ConnectWalletButton';
 
 import LoadingSpinner from '../components/LoadingSpinner';
+import { TonConnectButton } from '@tonconnect/ui-react';
 
 const FirstPage = () => {
    const [isFetching, setIsFetching] = useState(false);
@@ -134,10 +135,12 @@ const FirstPage = () => {
          }`}>
          {/* Connect Wallet Button Positioned in the Top Right Corner */}
          <div className="absolute top-4 right-4 font-mono">
-            <ConnectWalletButton
+            {/* <ConnectWalletButton
                walletAddress={walletAddress}
                setWalletAddress={setWalletAddress}
-            />
+            /> */}
+            {/* <TonConnectButton /> */}
+            <ConnectWalletButton />
          </div>
 
          <div className="my-40 flex flex-col items-center min-h-screen">

@@ -1,6 +1,6 @@
 {
    "name": "nutri-lens-be",
-   "version": "1.0.3",
+   "version": "1.0.1",
    "description": "",
    "main": "app.js",
    "scripts": {

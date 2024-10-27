@@ -3,9 +3,6 @@ const dotenv = require('dotenv');
 
 dotenv.config({ path: './config.env' });
 
-const googleCredentialsJson =
-   process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON.replace(/\\n/g, '\n');
-
 const {
    GOOGLE_APPLICATION_CREDENTIALS_TYPE,
    GOOGLE_APPLICATION_CREDENTIALS_PROJECT_ID,

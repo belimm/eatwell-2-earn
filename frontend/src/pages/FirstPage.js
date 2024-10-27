@@ -33,15 +33,11 @@ const FirstPage = () => {
       formData.append('image', file); // Add the selected file to the form data
 
       try {
-         const res = await axios.post(
-            'http://127.0.0.1:3000/api/v1/analyze/image',
-            formData,
-            {
-               headers: {
-                  'Content-Type': 'multipart/form-data', // Set the content type
-               },
-            }
-         );
+         const res = await axios.post(process.env.REACT_APP_BE_URL, formData, {
+            headers: {
+               'Content-Type': 'multipart/form-data', // Set the content type
+            },
+         });
 
          console.log('Server Response:', res);
 
@@ -134,7 +130,10 @@ const FirstPage = () => {
          }`}>
          {/* Connect Wallet Button Positioned in the Top Right Corner */}
          <div className="absolute top-4 right-4 font-mono">
-            <ConnectWalletButton />
+            <ConnectWalletButton
+               walletAddress={walletAddress}
+               setWalletAddress={setWalletAddress}
+            />
          </div>
 
          <div className="my-40 flex flex-col items-center min-h-screen">

@@ -1,6 +1,6 @@
 {
-   "name": "nutri-lens-be",
-   "version": "1.0.8",
+   "name": "eatwell-2-earn-be",
+   "version": "1.0.9",
    "description": "",
    "main": "server.js",
    "scripts": {

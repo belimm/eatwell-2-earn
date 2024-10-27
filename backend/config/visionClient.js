@@ -1,7 +1,11 @@
 const vision = require('@google-cloud/vision');
 const dotenv = require('dotenv');
 
-dotenv.config({ path: './config.env' });
+try {
+   dotenv.config({ path: './config.env' });
+} catch (error) {
+   console.log('error visonClient dotenv', error);
+}
 
 const {
    GOOGLE_APPLICATION_CREDENTIALS_TYPE,

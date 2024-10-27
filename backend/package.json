@@ -1,6 +1,6 @@
 {
    "name": "eatwell-2-earn-be",
-   "version": "1.0.9",
+   "version": "1.0.10",
    "description": "",
    "main": "server.js",
    "scripts": {

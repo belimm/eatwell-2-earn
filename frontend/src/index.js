@@ -8,7 +8,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-      <TonConnectUIProvider manifestUrl="https://github.com/belimm/eatwell-2-earn">
+      <TonConnectUIProvider manifestUrl="https://eatwell-2-earn-be.onrender.com/api/v1/ton/manifest">
          <App />
       </TonConnectUIProvider>
    </React.StrictMode>
